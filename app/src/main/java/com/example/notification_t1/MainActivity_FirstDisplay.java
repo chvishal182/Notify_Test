@@ -45,7 +45,7 @@ public class MainActivity_FirstDisplay extends AppCompatActivity {
 
                 if(!title.getText().toString().isEmpty()&&!body.getText().toString().isEmpty())
                 {
-                    fcmNotificationSender notificationSender = new fcmNotificationSender("/topics/all",title.getText().toString(),body.getText().toString(),getApplicationContext(),MainActivity_FirstDisplay.this);
+                    fcmNotificationSender notificationSender = new fcmNotificationSender("/topics/all",title.getText().toString(),body.getText().toString(),MainActivity_FirstDisplay.this,MainActivity_FirstDisplay.this);
                     notificationSender.SendNotifications();
                 }
 

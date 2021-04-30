@@ -12,8 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Notification_T1">
-        <activity android:name=".FirebaseMessagingService"
-            tools:ignore="Instantiatable"></activity>
+        <activity
+            android:name=".FirebaseMessagingService"
+            tools:ignore="Instantiatable" />
         <activity android:name=".fcmNotificationSender"
             tools:ignore="Instantiatable" />
         <activity android:name=".MainActivity" />
@@ -27,15 +28,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service
-            android:name=".MainActivity_FirstDisplay"
-            android:permission="TODO"
-            tools:ignore="ExportedService">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
 
         <service
             android:name=".FirebaseMessagingService"
